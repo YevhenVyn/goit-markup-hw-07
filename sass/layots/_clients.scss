@@ -1,0 +1,16 @@
+/* "КЛІЄНТИ" 
+КОЛІР ЗАДАЄТЬСЯ СПИСКУ .clients__list,
+ТОДІ ЛІНКИ ЧЕРЕЗ КЛАС .link ЙОГО НАСЛІДУЮТЬ inherit, 
+ІКОНКИ clients__icon НАСЛІДУЮТЬ ЗАЛИВКУ ВІД КОЛЬОРУ clients__link */
+
+.clients-list {
+  display: flex;
+  color: var(--clients-link);
+}
+.clients-list__item {
+  flex-basis: calc((100% - 5 * 30px) / 6);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,41 @@
+.form-mailing {
+  width: 570px;
+}
+
+.mailing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mailing__field {
+  position: relative;
+  width: 358px;
+  height: 50px;
+  color: var(--titles-light-transparency);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mailing__input {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--input-dark);
+  padding: 15px 16px;
+  color: inherit;
+}
+
+.mailing__label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .mailing__input:focus + &,
+  .mailing__input:not(:placeholder-shown) + & {
+    opacity: 0;
+  }
+}

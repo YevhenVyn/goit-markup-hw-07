@@ -1,0 +1,53 @@
+%button {
+  border: 0;
+  border-radius: 4px;
+
+  align-items: center;
+
+  background-color: var(--accent-color);
+  color: var(--titles-light);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bgc-btn-second);
+  }
+}
+
+.hero-button {
+  @extend %button;
+  display: inline-block;
+  min-width: 200px;
+  /* margin: 0px auto; ОСКІЛЬКИ ЦЕ ІНЛАЙН-БЛОК ЕЛЕМЕНТ ТО ЦЕНТРУВАННЯ  НАСЛІДУЄТЬСЯ ВІД БАТЬКІВСЬКОГО 'HERO'*/
+  padding: 10px 32px;
+  letter-spacing: 0.06em;
+  box-shadow: none;
+}
+
+.submit-btn {
+  @extend %button;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+}
+
+.submit-btn__text {
+  margin: 0;
+  margin-right: 10px;
+  /* padding-left: 28px; */
+}
+
+.submit-btn__icon {
+  width: 24px;
+  height: 24px;
+}

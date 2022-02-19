@@ -1,0 +1,25 @@
+@import './utils/variables';
+@import './base/common';
+@import './vendors/visHid';
+@import './base/mixin';
+
+@import './components/titels';
+@import './components/container';
+
+@import './layots/header';
+@import './components/logo';
+@import './components/button-main';
+@import './layots/hero';
+@import './layots/skills';
+@import './components/icon-box';
+@import './layots/about';
+@import './layots/clients';
+@import './layots/team';
+@import './components/cards/team-member-card';
+@import './components/socials';
+@import './layots/clients';
+@import './components/cards/client-card';
+@import './layots/footer';
+@import './components/forms/form-mailing';
+@import './components/modal';
+@import './components/forms/form-contact';

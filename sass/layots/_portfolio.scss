@@ -1,0 +1,23 @@
+.portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-btn-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* ПРИКЛАДИ РОБІТ */
+.cards-list {
+  display: flex;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
+.cards-list__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: var(--bgc-light);
+}
